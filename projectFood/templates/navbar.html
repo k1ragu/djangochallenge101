@@ -1,0 +1,45 @@
+<!-- <nav class="navbar navbar-expand-lg bg-warning">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="{% url 'landing' %}">FoodCom</a> 
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'projects' %}">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contacts</a>
+          </li> 
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary bg-opacity-25 sticky-top m-3 rounded-pill shadow-lg border border-secondary border-opacity-50">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold" href="{% url 'landing' %}">
+                <i class="bi bi-tree-fill text-success me-2"></i>Kiragu's Mind
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link px-3 active" href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="{% url 'projects' %}">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="{% url 'about' %}">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="{% url 'contact' %}">Contact-Us</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-success text-white rounded-pill px-4 ms-lg-3" href="#conservation">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>

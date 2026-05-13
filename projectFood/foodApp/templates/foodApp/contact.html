@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<body class="bg-dark text-white ">
+  
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                
+                <!-- Crystal Glass Card -->
+                <div class="card bg-secondary bg-opacity-10 border border-secondary border-opacity-50 rounded-5 shadow-lg p-4 p-md-5" 
+                     style="backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+                    
+                    <div class="text-center mb-5 text-success">
+                        <h2 class="display-6 fw-bold">Get in <span class="white">Touch</span></h2>
+                        <p class="text-white">Have questions about a species? Drop us a message.</p>
+                    </div>
+
+                    <form method="post" >
+                        <!-- Name Field -->
+                        <div class="mb-4">
+                            <label class="form-label small text-uppercase fw-bold text-white">Full Name</label>
+                            <input type="text" class="form-control bg-dark bg-opacity-50 border-secondary border-opacity-50 text-white rounded-3 py-2 shadow-none" placeholder="John Doe">
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="mb-4">
+                            <label class="form-label small text-uppercase fw-bold text-white">Email Address</label>
+                            <input type="email" class="form-control bg-dark bg-opacity-50 border-secondary border-opacity-50 text-white rounded-3 py-2 shadow-none" placeholder="name@example.com">
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="mb-4">
+                            <label class="form-label small text-uppercase fw-bold text-white">Your Message</label>
+                            <textarea class="form-control bg-dark bg-opacity-50 border-secondary border-opacity-50 text-white rounded-3 shadow-none" rows="4" placeholder="Tell us about your inquiry..."></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="d-grid">
+                            <button form="POST" type="submit" class="btn btn-success btn-lg rounded-pill fw-bold py-3 shadow-lg">
+                                Send Message <i class="bi bi-send-fill ms-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Simple Contact Info -->
+                <div class="row mt-5 text-center g-4">
+                    <div class="col-4">
+                        <i class="bi bi-geo-alt text-success fs-4"></i>
+                        <p class="small text-secondary mt-2">Nairobi, KE</p>
+                    </div>
+                    <div class="col-4">
+                        <i class="bi bi-envelope text-success fs-4"></i>
+                        <p class="small text-secondary mt-2">info@biovault.com</p>
+                    </div>
+                    <div class="col-4">
+                        <i class="bi bi-telephone text-success fs-4"></i>
+                        <p class="small text-secondary mt-2">+254 700 000</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
